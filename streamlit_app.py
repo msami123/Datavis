@@ -11,7 +11,7 @@ st.title('Data Visualization')
 with st.sidebar:
     # Load and encode the logo image
     try:
-        with open("/Users/anody/Downloads/DataVisualization/streamlit_app/logo.png", "rb") as image_file:
+        with open("logo.png", "rb") as image_file:
             encoded_string = base64.b64encode(image_file.read()).decode("utf-8")
         img = f"<img src='data:image/png;base64,{encoded_string}' alt='App Logo' style='width:200px;height:auto;'>"
         st.markdown(img, unsafe_allow_html=True)
